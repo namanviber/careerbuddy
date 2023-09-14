@@ -37,7 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   firebase_auth: ^4.9.0
   page_transition: ^2.1.0
-  game_levels_scrolling_map: ^0.0.7
+  level_map: ^0.2.0
+  flutter_svg: ^2.0.7
 
 dev_dependencies:
   flutter_test:

@@ -161,7 +161,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             const SizedBox(height: 20,),
             GestureDetector(
               onTap: (){
-                Navigator.of(context).pushReplacement(PageTransition(
+                Navigator.of(context).push(PageTransition(
                     type: PageTransitionType.fade, child: SignInScreen()));
               },
               child: RichText(

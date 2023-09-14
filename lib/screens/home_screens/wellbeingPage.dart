@@ -32,7 +32,7 @@ class _WellbeingScreenState extends State<WellbeingScreen> {
               ),
               GestureDetector(
                 onTap: () {
-                  Navigator.of(context).pushReplacement(PageTransition(
+                  Navigator.of(context).push(PageTransition(
                       type: PageTransitionType.fade,
                       child: const SignInScreen()));
                 },

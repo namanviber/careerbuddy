@@ -12,6 +12,10 @@ class Design2 extends StatelessWidget {
     var size = MediaQuery.of(context).size;
 
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
       body: Column(
         children: [
           Stack(
@@ -71,7 +75,7 @@ class Design2 extends StatelessWidget {
             children: [
               GestureDetector(
                 onTap: (){
-                  Navigator.of(context).pushReplacement(PageTransition(
+                  Navigator.of(context).push(PageTransition(
                       type: PageTransitionType.fade, child: Design3()));
                 },
                 child: Container(

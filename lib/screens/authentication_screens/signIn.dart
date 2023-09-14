@@ -116,7 +116,7 @@ class _SignInScreenState extends State<SignInScreen> {
                 height: 50,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).pushReplacement(PageTransition(
+                    Navigator.of(context).push(PageTransition(
                         type: PageTransitionType.fade, child: HomeScreen()));
                   },
                   child: const Text("SignIn", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: Colors.white),),
@@ -131,7 +131,7 @@ class _SignInScreenState extends State<SignInScreen> {
               const SizedBox(height: 20,),
               GestureDetector(
                 onTap: (){
-                  Navigator.of(context).pushReplacement(PageTransition(
+                  Navigator.of(context).push(PageTransition(
                       type: PageTransitionType.fade, child: SignUpScreen()));
                 },
                 child: RichText(
